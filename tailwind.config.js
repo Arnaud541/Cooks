@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        recipes: 'repeat(3,33.3%)'
+      }
+    },
+    colors: {
+      orange: '#E47915'
+    }
   },
   plugins: [require("daisyui")],
 }
